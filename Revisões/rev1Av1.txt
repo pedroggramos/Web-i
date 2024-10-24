@@ -1,0 +1,157 @@
+● Qual o objetivo das tags abaixo?
+● !DOCTYPE html - determinar um documento de tipo html
+● html - abrir o documento que pode criar e estruturar uma página
+● head - Cabeçalho do site
+● title - titulo do site
+● meta charset - define o idioma
+● body - corpo da página
+● em - itálico
+● u - underline
+● strike - riscado
+● strong - negrito
+● center - centralizar
+● br - quebrar linha
+● hr - introduzir uma linha
+● size - modificar tamanho
+● color - modificar cor
+● width - largura
+● height - altura
+● h1..h6 - tamanho da fonte
+● ol - lista ordenada
+● li - linha da lista
+● type(quais são os seus subatributos) - tipo de lista = ‘a’, ‘I’, ‘1’, circle, square…
+● start - define de onde começa
+● ul - lista não ordenada
+● align (quais são os seus atributos) - alinha = center, justify, right, left.
+● pre - texto pré-definido 
+● p - parágrafo
+● !-- – - comentar
+● border - criar uma borda
+● border-color - define a cor da borda
+● table - cria uma tabela
+● cellspacing - espaço entre células
+● cellpadding - espaço entre conteúdo e tabela
+● colspan - agrupar colunas
+● rowspan - agrupar linhas
+● bgcolor - cor de fundo
+● td - titulos da tabela
+● tr - abre uma tabela
+● th - conteudo da tabela
+● background  - fundo
+
+● img src - inserir imagem
+● a href - ligar a página a um link/doc
+● target - âncora
+● / - fecha uma tag
+● form - define formulário 
+● fieldset - agrupa o formulário em uma caixa
+● legend - legenda do formulário
+● method - método de envio
+● action - para onde vai ser enviado
+● input - insere um campo para o usuário interagir
+● placeholder - explica o que o usuário deve fazer 
+● maxlength - define a quantidade de letras que pode ser escrito
+● label - rotula o input
+● name - a o que está ligado
+● style - permite utilizar css em html
+● font family - tipo de fonte do texto
+● font-size - tamanho da fonte
+● background-color - cor de fundo
+● background-image - imagem de fundo da página
+● background-repeat - quantas vezes se repete a imagem
+● background-size - tamanho da imagem de fundo
+● background-attachment - definir se a imagem é fixa ou flutuante
+● background-position - qual posição da imagem de fundo
+● font-weight - espessura da fonte
+● font-style - define o estilo(itálico, oblíquo)
+● text-decoration - define o underline ou overline
+● text-decoration-color - cor do underline ou overline
+● text-decoration-style - tipo de underline ou overline
+● text-align - alinhar o texto
+● required - obrigatório
+● padding - espaço entre conteúdo e objeto 
+● margin - define espaço entre o elemento e a página
+● display (Explique cada um deles) - controlar o layout
+● float - posição do elemento
+● clear - limpar o espaço que sobra
+● /* */ - comentar em CSS
+● position - quais são? Explique cada uma delas - define a posição do elemento(left = esquerda, right = direita, top = cima, bottom = baixo)
+● border-style - estilo de borda
+● border-color - cor da borda
+● border-width - largura da borda
+● border-top - define a borda superior
+● border-left - define a borda esquerda
+● border-bottom - define a borda inferior
+● padding-top - espaço superior do conteúdo
+● padding-right -  espaço direito do conteúdo
+● padding-bottom - espaço inferior do conteúdo
+● padding-left - espaço esquerdo do conteúdo
+● margin - define espaço entre o elemento e a página
+● overflow - quais são? Explique cada um deles - define o que será feito com o estouro(auto = só adiciona barra de rolagem quando necessário, scroll = o estouro é cortado e adiciona uma barra de rolagem, hidden = corta o estouro e deixa invisível o resto do conteúdo)
+● text-decoration - quais são? Explique cada um deles - define a decoração do texto - underline ou overline
+● cursor - define qual cursor de mouse será mostrado quando passar sobre o elemento
+2. Quais tipos (type) podemos ter dentro do input ? Explique a função de cada um
+deles.
+ R: radio = selecionar apenas um elemento, checkbox = selecionar vários elementos, text = define caixa de texto, password = define senha, number = define número, email = define email, submit = enviar, reset = limpar, button = botão, file = enviar arquivo, time = define horário, range = nivel de satisfação, datetime-local = data e hora, week = semana, color = cor. 
+
+3. Qual a diferença de rádio e checkbox ?
+rádio - selecionar apenas um elemento que será enviado para um name
+checkbox - selecionar vários elementos que será enviado para um name
+
+4. Qual a função do id ? 
+campo identificador que serve para selecionar apenas um elemento para ser estilizado 
+
+5. O que significa HTML?
+HyperText Markup Language 
+
+  
+6. O que significa CSS?
+Cascading Style Sheets
+
+
+7. Qual a diferença entre os seletores: tag, id e class
+tag = instruções de como formatar um texto
+id = campo identificador que serve para um elemento para ser estilizado 
+class = grupo identificador que serve para vários elementos serem estilizados
+
+
+8.Posso trabalhar de 3 maneiras diferentes no CSS, quais são elas?
+Interna, externa e inline.
+
+9. Explique com suas palavras a diferença entre padding e margin.
+margin = define a distancia entre a página e o objeto
+padding = a distancia entre o objeto e o conteúdo
+
+10.Os formulários são uma parte fundamental da interação entre usuários e
+aplicativos web. Explique como você construiria um formulário simples em HTML
+para coletar informações de contato de um usuário, incluindo nome, e-mail e
+mensagem.
+
+<form>
+   <p><label> Nome <input type=’text’ name=’nome’></input></label></p>
+   <p><label> Email <input type=’email’ name=’email’></input></label></p>
+  <textarea cols=40 rows=10 placeholder=”Deixe seu Comentário”></textarea>
+</form>
+
+11. Tabelas são frequentemente usadas para organizar e exibir dados de maneira
+estruturada em páginas da web. Descreva como você construiria uma tabela
+simples em HTML para exibir informações de produtos, incluindo nome, preço e
+disponibilidade.
+<table border=2 width=50% cellpadding=20 cellspacing=2>
+	<tr>
+	  <th>Nome</th>
+              <th>Preço</th>
+	  <th> Disponibilidade </th>
+	</th>
+	<tr>
+	   <td> - </td>
+               <td> - </td>
+               <td> - </td>
+            </tr>
+</table>
+
+12. Qual a diferença entre ol e ul?
+ol= lista ordenada
+ul = lista não ordenada
+ 
+

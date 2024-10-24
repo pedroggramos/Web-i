@@ -1,0 +1,28 @@
+A propriedade transform é usada em CSS para aplicar transformações a um elemento
+HTML, como rotação, escala, inclinação e movimento. Quando aplicada a um elemento, a
+propriedade transform permite que você manipule sua aparência e posição sem afetar a
+estrutura do documento HTML.
+Existem vários tipos de transformações que podem ser aplicadas usando a propriedade
+transform, incluindo:
+translate: move um elemento ao longo do eixo x, y ou z.
+rotate: gira um elemento em torno do eixo x, y ou z.
+scale: aumenta ou diminui o tamanho de um elemento em um ou mais eixos.
+skew: inclina um elemento em um ou mais eixos.
+matrix: permite que você combine várias transformações em uma única propriedade.
+Além disso, a propriedade transform pode ser usada em conjunto com outras propriedades
+CSS, como transition e animation, para criar animações suaves e interativas. Ao combinar
+várias transformações e animações, é possível criar efeitos visuais complexos e
+interessantes em elementos HTML.
+translateX: move o elemento horizontalmente ao longo do eixo x.
+translateY: move o elemento verticalmente ao longo do eixo y.
+translateZ: move o elemento ao longo do eixo z (profundidade). Requer que o elemento
+tenha um valor de perspectiva.
+scaleX: aumenta ou diminui o tamanho do elemento horizontalmente.
+scaleY: aumenta ou diminui o tamanho do elemento verticalmente.
+scaleZ: aumenta ou diminui o tamanho do elemento ao longo do eixo z (profundidade).
+rotateX: gira o elemento em torno do eixo x.
+rotateY: gira o elemento em torno do eixo y.
+rotateZ: gira o elemento em torno do eixo z.
+skewX: inclina o elemento em relação ao eixo x.
+skewY: inclina o elemento em relação ao eixo y.
+matrix: permite combinar várias transformações em uma única propriedade.

@@ -1,0 +1,144 @@
+/*#red{
+	background-color:red;
+	width:200px;
+	height:200px
+}
+
+#blue{
+	background-color:blue;
+	width:200px;
+	height:200px
+}
+
+#container{
+	width:800px;
+	margin:0 auto;
+	}
+
+#left{
+	width:50%;
+	float:left;
+	background-color:lightblue
+}
+
+#right{
+	width:50%;
+	float:right;
+	background-color:lightgreen;
+	/*clear:both limpar o espaço que sobra
+}
+
+margin - espaço entre o objeto/elemento e a página
+
+.b{
+	background-color:aquamarine;
+	margin-top:60px;
+	margin-bottom:20px;
+	margin-left:60px;
+	margin-right:40px
+}
+
+.b{
+	background-color:aquamarine;
+	margin:60px 20px 60px 40px
+}
+
+.b{
+	background-color:aquamarine;
+	margin:60px 20px /*1 valor(top/bottom)2 valor(left/right)
+}*/
+
+/*padding - espaço entre o conteudo e o objeto 
+
+.b{
+	background-color:aquamarine;
+	width:200px;
+	height:80px;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:30px;
+	padding-right:30px
+}
+
+.b{
+	background-color:aquamarine;
+	width:200px;
+	height:80px;
+	padding:10px 30px 
+}
+
+.b{
+	background-color:aquamarine;
+	width:200px;
+	height:80px;
+	padding:10px
+}
+
+.container{
+	width:200px;
+	height:100px;
+	/*border-top:1px dashed red;
+	border-bottom:1px dotted blue;
+	border-left:1px groove yellow;
+	border-right:1px solid pink;
+	border:1px solid lightblue;
+	overflow:auto 
+	}
+
+.content{
+	width:400px;
+	height:150px;
+	background-color:aquamarine;
+}
+/*overflow:
+hidden - corta o estouro e coloca invisível o resto do conteudo
+scroll - o estouro é cortado e é adicionado uma barra de rolagem
+auto - semelhante ao scroll, só insere a barra de rolagem quando
+       for necessário 
+.block{
+	background-color:aquamarine;
+	margin-bottom:10px;
+	display:block
+}
+
+.inline{
+	display:inline;
+	background-color:violet;
+	margin-right:10px;
+}
+
+.inline-block{
+	display:inline-block;
+	background-color:orange;
+	width:100px;
+	height:50px
+}*/
+
+.container{
+	display:flex;
+	background-color:orange;
+	padding:10px;
+	justify-content:space-evenly;
+}
+
+.item{
+	background-color:lightblue;
+	padding:10px;
+	text-align:center
+	}
+/*exemplo de display:justify-content —--------------------------------------------------------------------------
+
+A propriedade justify-content em CSS é usada em contêineres flexíveis para alinhar os
+itens ao longo do eixo principal do contêiner. O eixo principal é determinado pela direção do
+layout flexível, que por padrão é horizontal (da esquerda para a direita) se não for
+alterado.
+flex-start: Os itens são alinhados no início do contêiner flexível.
+flex-end: Os itens são alinhados no final do contêiner flexível.
+center: Os itens são centralizados ao longo do eixo principal do contêiner flexível.
+space-between: Os itens são distribuídos uniformemente ao longo do eixo principal do
+contêiner flexível; o primeiro item está no início e o último item está no final.
+space-around: Os itens são distribuídos uniformemente ao longo do eixo principal do
+contêiner flexível com espaçamento igual ao redor de cada item.
+space-evenly: Os itens são distribuídos uniformemente ao longo do eixo principal do
+contêiner flexível com espaçamento igual entre eles, incluindo o espaço antes do primeiro e
+depois do último item.*/

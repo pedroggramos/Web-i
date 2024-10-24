@@ -1,0 +1,255 @@
+Revisão parte 2
+
+1. Explique como o conceito de "cascata" (cascade) é fundamental para o
+funcionamento do CSS. Descreva como a cascata determina a prioridade e a
+aplicação das regras de estilo em um documento HTML. Além disso, discuta
+como o uso de seletores específicos, herança e ordem de declaração podem
+influenciar o resultado final da estilização de uma página web. Dê exemplos
+práticos para ilustrar seus pontos.
+
+R: Cascata define como as regras são aplicadas e resolvidas quando se tem múltiplas declarações que podem conflitar.
+
+ O CSS determina origens principais de prioridades através de:: 
+Origem dos Estilos: distingue três origens principais de estilos, que são aplicadas em uma ordem específica.
+Especificidade: determina qual regra deve ser aplicada de acordo com a “força” do seletor.
+Ordem de declaração: a última  regra no código fonte é aplicada.
+
+Ex:
+body{
+	font-size: 16px;
+	color: black;
+}
+
+p{
+color:blue;
+}
+
+.footer{
+	background: red;
+	height: 200px;
+width: auto;
+}
+
+p.important{
+	color: yellow !important;
+}
+
+2. Explique como o conceito de flexbox em CSS facilita o design responsivo e o
+posicionamento de elementos em layouts web. Descreva os principais
+conceitos do flexbox, como containers (flex containers) e itens (flex items), e
+como eles trabalham juntos para criar layouts flexíveis. Além disso, discuta as
+propriedades principais do flexbox, como display: flex,
+flex-direction, justify-content, align-items, e como essas
+propriedades são utilizadas para controlar o posicionamento e o alinhamento
+dos elementos dentro de um flex container. Forneça exemplos práticos para
+demonstrar diferentes técnicas de layout usando flexbox.
+R:Pois como o nome já diz, os elementos se tornam flexíveis de acordo com a formatação da página.
+
+flex containers: torna um container flexível
+flex items: deixa os itens dentro do container flexíveis de acordo com o container 
+flex:define o elemento como flexível
+flex-direction: define a direção do conteúdo dentro de um elemento 
+justify-content: ajusta a posição entre os próprios conteúdos de um elemento
+align-items:  alinhar o posicionamento conteúdo de um elemento
+
+Ex:
+
+.container { 
+display: flex; 
+align-items: center;
+height: 300px;
+ } 
+.sidebar {
+display: flex;
+justify-content: space-around; 
+width: 200px;
+ background-color: lightblue;
+ padding: 10px;
+ } 
+.content {
+display: flex;
+align-items: flex-end;
+justify-content: space-evenly;
+ 	padding: 10px; 
+background-color: lightgreen;
+ }
+
+
+3. Discuta a importância e o uso de media queries em CSS para criar designs
+responsivos em páginas web. Explique o que são media queries e como elas
+permitem adaptar o layout e os estilos de um site com base nas
+características do dispositivo ou tela do usuário. Além disso, explore
+exemplos de media queries com diferentes breakpoints (pontos de quebra) e
+como eles são aplicados para ajustar o design de uma página conforme o
+tamanho da tela. Dê exemplos práticos de como utilizar media queries para
+criar um layout responsivo que funcione bem em dispositivos desktop, tablets
+e smartphones.
+
+
+
+
+@media(min-width:0px) and (max-width:600px){
+	width: 100;
+}
+
+@media(min-width:601px) and (max-width:900px){
+	width: 200;
+}
+
+@media(min-width:901px) and (max-width:1200px){
+	width: 300;
+}
+
+@media(min-width:901px) and (max-width:1200px){
+	width: 300;
+}
+
+@media(min-width:902px) {
+	width:auto;
+}
+
+4. Explique a diferença entre os métodos de posicionamento absoluta e relativa
+em CSS. Descreva como cada um desses métodos afeta o posicionamento
+de elementos dentro do fluxo normal do documento HTML e como eles
+interagem com outros elementos na página. Além disso, discuta cenários
+específicos em que cada tipo de posicionamento é mais adequado e forneça
+exemplos práticos para ilustrar as diferenças e os usos de cada método.
+5. Discuta a importância e o impacto do conceito de "seletores" em CSS para a
+estilização eficiente de documentos HTML. Explique o que são seletores em
+CSS e como eles são utilizados para aplicar estilos a elementos específicos
+ou conjuntos de elementos em uma página web. Além disso, explore
+diferentes tipos de seletores em CSS, como seletores de tipo, classe, ID,
+atributo e pseudo-classes, e forneça exemplos práticos de cada um deles.
+6. Explique como as propriedades float e clear são utilizadas em CSS para
+o posicionamento de elementos em layouts de página. Descreva o que cada
+uma dessas propriedades faz e como elas interagem com outros elementos
+no fluxo normal do documento HTML. Além disso, discuta as vantagens e
+desvantagens do uso de float para criar layouts em comparação com
+
+abordagens mais modernas, como flexbox e grid layout. Forneça exemplos
+práticos para ilustrar como float e clear podem ser usados para criar
+layouts simples e como essas técnicas podem ser combinadas com outras
+técnicas de posicionamento em CSS.
+7. Discuta o papel das animações em CSS na criação de experiências
+interativas em páginas web. Explique como as animações são definidas e
+aplicadas utilizando CSS, incluindo as propriedades chave como
+@keyframes, animation-name, animation-duration. Além disso,
+explore exemplos práticos de como animações CSS podem ser utilizadas
+para melhorar a usabilidade e o design de interfaces web, fornecendo casos
+de uso específicos e demonstrações de animações simples e avançadas.
+8. Leia o trecho de código CSS a seguir:
+.container {
+width: 80%;
+margin: 0 auto;
+
+}
+.box {
+background-color: #f0f0f0;
+padding: 20px;
+border: 1px solid #ccc;
+}
+.box h2 {
+color: #333;
+font-size: 1.5em;
+}
+.box p {
+color: #666;
+line-height: 1.6;
+}
+@media (min-width: 768px) {
+.container {
+width: 70%;
+}
+.box {
+float: left;
+width: 30%;
+margin-right: 5%;
+}
+
+Com base no código apresentado, responda às questões:
+1. Explicação de Estilo e Estrutura: Explique o propósito da classe .container e
+como ela afeta o layout geral da página. Descreva também a finalidade da classe
+.box e como as regras CSS aplicadas a ela contribuem para a estilização dos
+elementos.
+2. Mídia de Consulta (Media Query): Explique o que é uma mídia de consulta (media
+query) e como ela é utilizada no código fornecido. Detalhe como as regras dentro
+da mídia de consulta modificam o layout quando a largura mínima da tela é de 768
+pixels (min-width: 768px).
+3. Posicionamento e Layout: Comente sobre o uso da propriedade float dentro da
+mídia de consulta e como ela influencia o posicionamento dos elementos com a
+classe .box. Compare o uso de float com outras técnicas modernas de layout em
+CSS, como flexbox e grid layout, destacando vantagens e desvantagens.
+4. Adaptação Responsiva: Discuta como o código CSS fornecido permite que o layout
+da página se adapte responsivamente a diferentes tamanhos de tela. Dê exemplos
+específicos de como os ajustes de largura (width), margem (margin) e
+posicionamento (float) contribuem para essa adaptabilidade.
+
+9.<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exemplo de Layout com CSS</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+<h1>Meu Site</h1>
+<nav>
+<ul>
+<li><a href="#">Início</a></li>
+<li><a href="#">Sobre</a></li>
+<li><a href="#">Serviços</a></li>
+<li><a href="#">Contato</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<section class="destaque">
+<h2>Destaques da Semana</h2>
+
+<div class="noticia">
+<h3>Título da Notícia 1</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</div>
+<div class="noticia">
+<h3>Título da Notícia 2</h3>
+<p>Nulla facilisi. Donec porta leo ac tellus malesuada, et varius velit
+
+feugiat.</p>
+</div>
+<div class="noticia">
+<h3>Título da Notícia 3</h3>
+<p>Vivamus interdum magna ac nunc bibendum, vel maximus mi
+
+tempus.</p>
+</div>
+</section>
+</main>
+<footer>
+<p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>
+
+Com base no código HTML fornecido, responda às questões relacionadas a CSS:
+1. Estilização de Elementos: Descreva como você poderia estilizar o cabeçalho
+(header) para ter um fundo cinza claro (#f2f2f2), texto centralizado e um
+espaçamento interno de 20px ao redor do conteúdo.
+2. Estilo de Navegação: Explique como você poderia estilizar a navegação (nav) para
+ter os itens da lista (ul) alinhados horizontalmente, com margem entre cada item de
+10px, e os links (a) com cor de texto azul (#007bff) e sem decoração sublinhada.
+3. Estilização de Destaques: Detalhe como você poderia estilizar a seção de
+destaques (section.destaque) para ter um fundo branco (#ffffff), margem interna
+(padding) de 20px, e as notícias (div.noticia) com uma borda sólida cinza (#ccc),
+margem inferior de 20px e espaçamento interno de 15px.
+4. Responsividade: Com base nas práticas de design responsivo, discuta como você
+poderia usar media queries em CSS para ajustar o layout quando a largura da tela
+for menor que 768px. Dê exemplos de ajustes que poderiam ser feitos nos estilos
+para garantir uma melhor experiência de usuário em dispositivos móveis.
+10. Qual propriedade CSS é utilizada para definir os estágios chave de uma animação?
+a) transition
+b) transform
+c) keyframes x
+d) animation
+
