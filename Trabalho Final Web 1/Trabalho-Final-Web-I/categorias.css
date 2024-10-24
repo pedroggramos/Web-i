@@ -1,0 +1,718 @@
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background: rgba(211, 211, 211, 0.3);
+  overflow: auto;
+  scrollbar-color: black;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(211, 211, 211, 0.3);
+  border-radius: 20px;
+  border: 3px solid black;
+}
+
+
+
+header {
+  display: inline-block;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  color: white;
+  background-color: black;
+  height: 35px;
+  width: 100%;
+  padding-top: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0);
+}
+
+.containerA {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  gap: 40px;
+  background-color: white;
+}
+
+.logo {
+  width: 230px;
+  height: 100px;
+  margin-left: -120px;
+}
+
+nav ul {
+  padding: 10px;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  background-color: white;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  font-size: 14pt;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0); */
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+.botoes {
+
+  /* float:right; */
+  display: flex;
+  gap: 10px;
+}
+
+#divBusca {
+  /* float: left; */
+  background-color: white;
+  border: solid 2px black;
+  border-radius: 10px;
+  width: 250px;
+  height: 25px;
+  display: flex;
+}
+
+#txtBusca {
+  float: left;
+  background-color: transparent;
+  padding-left: 5px;
+  font-size: 15px;
+  border: none;
+  height: 25px;
+  width: 150px;
+}
+
+#btnBusca {
+  border: none;
+  float: left;
+  height: 25px;
+  border-radius: 0 7px 7px 0;
+  width: 72px;
+  font-weight: bold;
+  color: white;
+  background: black;
+  cursor: pointer;
+}
+
+#divBusca img {
+  float: left;
+}
+
+#icone1 {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: url('1564497_basket_cart_food_grosseries_shop_icon.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  cursor: pointer;
+}
+
+#icone2 {
+
+  margin-right: 8px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: url('211755_heart_icon.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  cursor: pointer;
+}
+
+#icone3 {
+  margin-right: 8px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: url('2024644_login_user_avatar_person_users_icon.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  cursor: pointer;
+}
+
+#icone4 {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: url('house.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  cursor: pointer;
+}
+
+.titulo {
+  text-align: center;
+}
+
+section {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+section2 {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+section3 {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.camisas {
+  border: 1px solid black;
+  transition: transform 0.3s;
+  box-shadow: 0 16px 17px 5px rgba(0, 0, 0, 0.3);
+}
+
+.preco {
+  font-weight: bold;
+  color: #333;
+  float: left;
+  font-size: 18pt;
+}
+
+.btn {
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+
+/* .produto{
+  height: auto;
+} */
+
+.btn:hover {
+  background: #555;
+  transform: scale(0.98);
+}
+
+.camisas:hover {
+  transform: scale(0.9);
+}
+
+footer {
+  display: inline-block;
+  text-align: center;
+  margin-top: 100px;
+  height: 200px;
+  width: 100%;
+  color: white;
+  background-color: black;
+}
+
+@media (min-width: 864px) and (max-width: 1110px) {
+  header {
+    font-size: 14px;
+  }
+
+  .containerA {
+    height: 100px;
+  }
+
+  #divBusca {
+    width: auto;
+  }
+
+  #txtBusca {
+    width: 100px;
+  }
+
+  #btnBusca {
+    width: auto;
+  }
+
+  nav ul {
+    font-size: 12pt;
+  }
+
+  .logo {
+    width: 180px;
+    height: 60px;
+    margin-left: -80px;
+  }
+
+  #icone1 {
+    width: 22px;
+    height: 22px;
+  }
+
+  #icone2 {
+    width: 22x;
+    height: 25px;
+    margin-top: -4px;
+  }
+
+  #icone3 {
+    width: 22px;
+    height: 22px;
+  }
+
+  #icone4 {
+    margin-left: 20px;
+    width: 25px;
+    height: 25px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+
+
+  .camisas {
+    height: 210px;
+    width: 210px;
+  
+}
+
+  h2{
+    font-size: 15pt;
+  }
+
+  h3{
+    font-size: 12pt;
+  }
+
+  s{
+    font-size: 11pt;
+  }
+
+  .preco{
+    font-size: 16pt;
+  }
+
+  .btn{
+    padding: 7px 15px;
+    font-size: 12pt;
+    margin-top: -2px;
+  }
+
+}
+
+@media (min-width: 730px) and (max-width: 865px) {
+  header {
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .containerA {
+    height: 120px;
+  }
+
+  #divBusca {
+    width: auto;
+  }
+
+  #txtBusca {
+    width: 70px;
+  }
+
+  #btnBusca {
+    width: auto;
+  }
+
+  nav ul {
+    font-size: 12pt;
+  }
+
+  .logo {
+    width: 180px;
+    height: 60px;
+    margin-left: -40px;
+  }
+
+  .camisas {
+    font-size: 18pt;
+    height: 200px;
+    width: 200px;
+  }
+
+  #icone1 {
+    background-size: 80%;
+
+  }
+
+  #icone2 {
+    background-size: 80%;
+    margin-right: 3px;
+
+  }
+
+  #icone3 {
+    background-size: 80%;
+    margin-right: 3px;
+
+  }
+
+  #icone4 {
+    margin-left: 20px;
+    background-size: 80%;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+
+  .camisas {
+    height: 180px;
+    width: 180px;
+
+  }
+
+  h2{
+    font-size: 13pt;
+  }
+
+  h3{
+    font-size: 11pt;
+  }
+
+  s{
+    font-size: 9pt;
+  }
+
+  .preco{
+    font-size: 14pt;
+  }
+
+  .btn{
+    padding: 6px 12px;
+     font-size: 10pt;
+    margin-top: -4px;
+
+  }
+
+
+
+}
+
+@media (min-width: 623px) and (max-width: 729px) {
+  header {
+    font-size: 10pt;
+    width: 100%;
+  }
+
+  .containerA {
+    height: 100px;
+  }
+
+
+  #divBusca {
+    width: auto;
+    height: 15px;
+  }
+
+  #divBusca img {
+    width: 15px;
+    height: 15px;
+  }
+
+  #txtBusca {
+    width: 50px;
+    height: 15px;
+  }
+
+  #btnBusca {
+    width: auto;
+    height: 15px;
+  }
+
+  nav ul {
+    font-size: 12pt;
+  }
+
+  .logo {
+    width: 150px;
+    height: 40px;
+    margin-left: -20px;
+  }
+
+  #icone1 {
+    background-size: 60%;
+    margin-right: -12px;
+    margin-top: 10px;
+  }
+
+  #icone2 {
+    background-size: 60%;
+    margin-right: -12px;
+    margin-top: 10px;
+  }
+
+  #icone3 {
+    background-size: 60%;
+    margin-top: 10px;
+  }
+
+  #icone4 {
+    margin-left: 40px;
+    background-size: 70%;
+  }
+
+  footer {
+    font-size: 6pt;
+  }
+
+  .camisas {
+    height: 150px;
+    width: 150px;
+
+  }
+
+  h2{
+    font-size: 11pt;
+  }
+
+  h3{
+    font-size: 9pt;
+  }
+
+  s{
+    font-size: 7pt;
+  }
+
+  .preco{
+    font-size: 12pt;
+  }
+
+  .btn{
+    padding: 5px 10px;
+     font-size: 8pt;
+    margin-top: -6px;
+
+
+  }
+
+
+}
+
+@media (min-width: 450px) and (max-width: 622px) {
+  header {
+    font-size: 10pt;
+    width: 100%;
+  }
+
+  .containerA {
+    height: 100px;
+  }
+
+
+  #divBusca {
+    width: auto;
+    height: 15px;
+  }
+
+  #divBusca img {
+    width: 15px;
+    height: 15px;
+  }
+
+  #txtBusca {
+    width: 50px;
+    height: 15px;
+  }
+
+  #btnBusca {
+    width: auto;
+    height: 15px;
+  }
+
+  nav ul {
+    font-size: 12pt;
+  }
+
+  .logo {
+    width: 150px;
+    height: 40px;
+    margin-left: -20px;
+  }
+
+  #icone1 {
+    background-size: 60%;
+    margin-right: -12px;
+    margin-top: 10px;
+  }
+
+  #icone2 {
+    background-size: 60%;
+    margin-right: -12px;
+    margin-top: 10px;
+  }
+
+  #icone3 {
+    background-size: 60%;
+    margin-top: 10px;
+  }
+
+  #icone4 {
+    margin-left: 40px;
+    background-size: 70%;
+  }
+
+  footer {
+    font-size: 6pt;
+  }
+
+  .camisas {
+    height: 120px;
+    width: 120px;
+
+  }
+
+  h2{
+    font-size: 9pt;
+  }
+
+  h3{
+    font-size: 7pt;
+  }
+
+  s{
+    font-size: 5pt;
+  }
+
+  .preco{
+    font-size: 10pt;
+  }
+
+  .btn{
+    padding: 5px 10px;
+     font-size: 6pt;
+    margin-top: -8px;
+
+  }
+
+
+}
+
+@media (min-width: 0px) and (max-width: 450px) {
+  header {
+    font-size: 8pt;
+    width: 100%;
+  }
+
+  .containerA {
+    height: 80px;
+  }
+
+
+  #divBusca {
+    width: auto;
+    height: 15px;
+  }
+
+  #divBusca img {
+    width: 15px;
+    height: 15px;
+  }
+
+  #txtBusca {
+    font-size: 0pt;
+    width: 20px;
+    height: 15px;
+  }
+
+  #btnBusca {
+    font-size: 0pt;
+    width: 25px;
+    height: 15px;
+  }
+
+  nav ul {
+    font-size: 12pt;
+  }
+
+  .logo {
+    width: 120px;
+    height: 40px;
+    margin-left: 20px;
+  }
+
+  #icone1 {
+    background-size:50% ;
+     margin-right: -12px;
+      margin-top: 10px;
+  }
+
+  #icone2 {
+    background-size:50% ;
+     margin-right: -12px;
+      margin-top: 10px;
+  }
+
+  #icone3 {
+    background-size: 50%;
+    margin-top: 10px;
+  }
+
+  #icone4 {
+    margin-left: 40px;
+    background-size: 50%;
+  }
+
+  nav ul{
+   height: 20px;
+  }
+
+  footer {
+    font-size: 6pt;
+  }
+
+  .camisas {
+    height: 90px;
+    width: 90px;
+
+  }
+
+  h2{
+    font-size: 7pt;
+  }
+
+  h3{
+    font-size: 5pt;
+  }
+
+  s{
+    font-size: 5pt;
+  }
+
+  .preco{
+    font-size: 8pt;
+  }
+
+  .btn{
+    padding: 4px 8px;
+     font-size: 4pt;
+    margin-top: -14px;
+
+  
+  }
+
+
+}

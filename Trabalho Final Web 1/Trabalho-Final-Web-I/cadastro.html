@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Cadastrar - CAMISA10.STORE</title>
+  <link href="cadastro.css" rel="stylesheet" />
+  <link rel="icon" href="iconlogo.ico" />
+</head>
+
+<body>
+  <div class="header">
+    <p><a href="index.html" class="volta">
+        < VOLTAR PARA LOJA </a>
+    </p>
+    <center><img src="logoCamisa10.png" class="logo" /></center>
+  </div>
+  <form>
+    <div class='containerForm'>
+      <h3 class="login">DADOS PESSOAIS</h3>
+      <input class="inputs" type="text" name="nomeCompleto" placeholder="Nome Completo" maxlength="150"
+        required><br><br>
+      <input class="inputs" type="text" name="email" placeholder="Email" maxlength="150" required><br><br>
+      <input class="inputs" type="text" name="numero" placeholder="Telefone (DDD + Número)" maxlength="150" required>
+      </input><br><br>
+      <input class="inputs" type="password" name="senha" placeholder="Senha (min 5 e max 12 caracteres)" minlength="5"
+        maxlength="12" required> </input><br><br>
+      <input class="inputs" type="password" name="senha" placeholder="Confirme a senha" minlength="5" maxlength="12"
+        required>
+      </input><br><br>
+      <select required class="genero" name="Gênero">
+        <option>Gênero</option>
+        <option> Masculino </option>
+        <option> Feminino </option>
+        </optgroup>
+      </select><br><br>
+      <hr width="70%">
+      <h3 class="login">ENDEREÇO</h3>
+      <div class="enderecos">
+        <input class="esquerda" type="text" name="endereco" placeholder="CEP" required> </input>
+        <select class="UF" name="endereco">
+          <option> UF </option>
+          <option value="AC">Acre</option>
+          <option value="AL">Alagoas</option>
+          <option value="AP">Amapá</option>
+          <option value="AM">Amazonas</option>
+          <option value="BA">Bahia</option>
+          <option value="CE">Ceará</option>
+          <option value="DF">Distrito Federal</option>
+          <option value="ES">Espírito Santo</option>
+          <option value="GO">Goiás</option>
+          <option value="MA">Maranhão</option>
+          <option value="MT">Mato Grosso</option>
+          <option value="MS">Mato Grosso do Sul</option>
+          <option value="MG">Minas Gerais</option>
+          <option value="PA">Pará</option>
+          <option value="PB">Paraíba</option>
+          <option value="PR">Paraná</option>
+          <option value="PE">Pernambuco</option>
+          <option value="PI">Piauí</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="RN">Rio Grande do Norte</option>
+          <option value="RS">Rio Grande do Sul</option>
+          <option value="RO">Rondônia</option>
+          <option value="RR">Roraima</option>
+          <option value="SC">Santa Catarina</option>
+          <option value="SP">São Paulo</option>
+          <option value="SE">Sergipe</option>
+          <option value="TO">Tocantins</option>
+        </select> <br>
+        <input class="esquerda" type="text" name="endereco" placeholder="Cidade" required>
+        <input class="direita" type="text" name="endereco" placeholder="Bairro" required><br>
+        <input class="esquerda" type="text" name="endereco" placeholder="Número" required>
+        <input class="direita" type="text" name="endereco" placeholder="Complemento" required><br><br>
+        <input class="inputs" type="text" name="nomeCompleto" placeholder="Nome do Destinatário" maxlength="150"
+          required>
+      </div><br>
+      <a href="index.html" id="continuar"> Continuar </a><br>
+      <br>
+    </div>
+  </form>
+
+  <footer>
+    <p>&copy; 2024 Camisa10. Todos os direitos reservados. Camisa10 Comércio de Roupas, Calçados e Acessórios Ltda.
+    </p>
+    <p>CNPJ: 79.243.467/0001-72 - R. Ator Paulo Gustavo, 251 - Icaraí, Niterói - RJ - CEP: 24230-052</p>
+     <p>Tel:(21)7531-4758 / Cel:(21)99432-3361 </p>
+  </footer>
+
+</body>
+
+</html>

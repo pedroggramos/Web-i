@@ -1,0 +1,15 @@
+<!-- <div class="container2">
+  <div class='iconesGeral'>
+    <div id="icones1"><img src="843786_whatsapp_icon.png" height="30" width="30" />
+      <div class="palavras"> Contato </div>
+    </div>
+    <div id="icones2"><img src="2931150_building_home_homepage_house_architecture_icon.png" height="30" width="30" />
+      <div class="palavras"> Home </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- <div class="icones"> <img src="1564497_basket_cart_food_grosseries_shop_icon.png" height="30" width="30" /> <img
+    src="211755_heart_icon.png" height="30" width="30" /> <img src="2024644_login_user_avatar_person_users_icon.png"
+    height="30" width="30" />
+</div> -->
